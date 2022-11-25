@@ -1,14 +1,15 @@
 #include <stdio.h>
-#include <time.h>
 #include "myutils/mylib.h"
 
 int main(void){
     int parameter = 32;
     
-    for (unsigned int i = 0; i < parameter; i++)
-    {
+    printf("parameter: %d\n", parameter);
+
+    for (unsigned int i = 0; i < parameter; i++){
         long long int Iter = fibbonaciIterative(i);
         long long int Rec = fibbonaciRecursiveOptimized(i);
+        
         printf("FibIter(%d): %lld, FibRec(%d): %lld %s\n", i, Iter, i, Rec, Iter == Rec ? "True" : "False");
     }
     

@@ -10,6 +10,7 @@ double getDuration (long long int fibFunction(int), int parameter){
 
 double getDurationWithLoop (long long int fibFunction(int), int parameter){
     int start = clock();
+    
     for(int i = 0; i < parameter; i++){
         fibFunction(i);
     }
