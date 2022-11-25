@@ -9,7 +9,7 @@ int main(void){
     {
         long long int Iter = fibbonaciIterative(i);
         long long int Rec = fibbonaciRecursiveOptimized(i);
-        printf("FibIter(%d): %lld, FibRec(%d): %lld %d\n", i, Iter, i, Rec, Iter == Rec);
+        printf("FibIter(%d): %lld, FibRec(%d): %lld %s\n", i, Iter, i, Rec, Iter == Rec ? "True" : "False");
     }
     
     return 0;
