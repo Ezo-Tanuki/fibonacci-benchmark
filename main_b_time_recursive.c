@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include "myutils/mylib.h"
-#include "myutils/func.time.h"
+#include "mylib/mylib.h"
+#include "mylib/func.time.h"
 
 int main(void){
     int parameter = 32;

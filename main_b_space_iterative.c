@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "myutils/mylib.h"
+#include "mylib/mylib.h"
 
 int main(void){
     int parameter = 100000;

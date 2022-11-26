@@ -19,10 +19,10 @@ timeRec:
 	./main_b_time_recursive.out
 
 mylib.o:
-	gcc -o mylib.o -c myutils/mylib.c
+	gcc -o mylib.o -c mylib/mylib.c
 
 func.time.o:
-	gcc -o func.time.o -c myutils/func.time.c
+	gcc -o func.time.o -c mylib/func.time.c
 
 clear:
 	rm -rf *.out
