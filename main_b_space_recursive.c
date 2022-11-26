@@ -8,7 +8,7 @@ int main(void){
     printf("parameter: %d\n", parameter);
 
     while(1){
-        fibbonaciRecursiveOptimized(parameter);
+        fibonacciRecursiveOptimized(parameter);
     }
     
     return 0;

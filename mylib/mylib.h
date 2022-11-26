@@ -1,5 +1,5 @@
-long long int fibbonaciRecursiveOptimized(int n);
+long long int fibonacciRecursiveOptimized(int n);
 
-long long int fibbonaciRecursive(int n);
+long long int fibonacciRecursive(int n);
 
-long long int fibbonaciIterative(int n);
+long long int fibonacciIterative(int n);

@@ -6,7 +6,7 @@ int main(void){
     int parameter = 32;
     
     printf("parameter: %d\n", parameter);
-    printf("time: %fs\n", getDurationWithLoop(fibbonaciRecursiveOptimized, parameter));
+    printf("time: %fs\n", getDurationWithLoop(fibonacciRecursiveOptimized, parameter));
     
     return 0;
 }

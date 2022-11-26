@@ -9,20 +9,20 @@
     return fibmem[input] = CalculateFibRecursive(input-1, fibmem) + CalculateFibRecursive(input-2, fibmem);
 }
 
-long long int fibbonaciRecursiveOptimized(int input){
+long long int fibonacciRecursiveOptimized(int input){
     long long int fibmem[90] = {0};
 
     return CalculateFibRecursive(input, fibmem);
 }
 
-long long int fibbonaciRecursive(int input){
+long long int fibonacciRecursive(int input){
     if (input<=0) return 0;
     if (input==1) return 1;
 
-    return fibbonaciRecursive(input-1) + fibbonaciRecursive(input-2);
+    return fibonacciRecursive(input-1) + fibonacciRecursive(input-2);
 }
 
-long long int fibbonaciIterative(int input){
+long long int fibonacciIterative(int input){
     if (input<=0) return 0;
     if (input==1) return 1;
 
