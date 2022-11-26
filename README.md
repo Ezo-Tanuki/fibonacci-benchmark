@@ -17,7 +17,7 @@ $$F(2) = F(1) + F(0),$$
 we can change the formula into:
 
 $$F(1) = F(2) - F(0)$$
-now we calculate $F(1)$ using the formula above and re-assign it into the `tmp` variable. Now we can calculate $F(3)$ and we keep doing it to find the next sequence. Below is the snippet for the algorithm.
+now we calculate $F(1)$ using the formula above and re-assign it into the `tmp` variable. Now we can calculate $F(3)$ and we keep doing it to find the next sequence. Below is the snippet for the algorithm:
 
 ```c
 int fibonacciIterative(int n){
@@ -49,9 +49,13 @@ int fibonacciRecursive(int n){
 There is a drawback however, that is the time complexity grows exponentially as `n` gets higher, the reason why is has higher time complexity compared to iterative method is because for some input it got called multiple times for instance take `n` = 5.
 
 $$F(5) = F(4) + F(3)$$
+
 $$F(5) = F(3) + F(2) + F(2) + F(1)$$
+
 $$F(5) = F(2) + F(1) + F(1) + F(0) + F(1) + F(0) + F(1)$$
+
 $$F(5) = F(1) + F(0) + 4F(1) + 2F(0)$$
+
 $$F(5) = 5F(1) + 3F(0)$$
 
 As you can see from the equation above, to calculate $F(5)$ you will need to call $F(1)$ and $F(0)$ multiple times. This unnecessary calls will increase the time it took to calculate the sequence as the size getting bigger.
