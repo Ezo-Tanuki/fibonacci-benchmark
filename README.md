@@ -75,3 +75,26 @@ int fibonacciRecursive(int n){
 }
 ```
 Now with some optimization the code should be running pretty fast, the cons  however it takes a lot more memory to store the value.
+# How to run
+First enter `make` in wsl,
+```
+make
+```
+then you can run several files to test its time complexity and space complexity
+```
+./main_b_time_iterative.out
+./main_b_space_iterative.out
+```
+## Time Complexity
+You can check the time it took for the program to finish
+
+![TimeIterative](img/TimeIter.png)
+
+![TimeComplex](img/TimeRec.png)
+
+## Space Complexity
+You can also check the memory it took for the program to run from the task manager
+
+![SpaceIterative](img/SpaceIter.png)
+
+![SpaceRecursive](img/SpaceRec.png)
