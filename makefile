@@ -6,6 +6,11 @@ all: mylib.o func.time.o
 	gcc -o main_b_space_iterative.out main_b_space_iterative.c mylib.o
 	gcc -o main_b_space_recursive.out main_b_space_recursive.c mylib.o
 
+update: clear all
+
+test:
+	./main_test.out
+
 spaceIter:
 	./main_b_space_iterative.out
 
